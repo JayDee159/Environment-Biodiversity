@@ -18,7 +18,7 @@ app.use(express.json());
 app.use("/api/animals", require("./routes/animalRoutes"));
 
 // ===============================
-mongoose.connect("mongodb://127.0.0.1:27017/bio_bkn")
+mongoose.connect("mongodb://127.0.0.1:27017/biodiversity")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
